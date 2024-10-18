@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial, sans-serif;
+    line-height: 1.5;
+    background-color: #000000;
+}
+
+@font-face {
+    font-family: kendo;
+    src: url(./eutopia_embassador/Eutopia\ Embassador.ttf);
+}
+
+.header {
+    background-color: #00000f;
+    color: #e3dd66;
+    text-align: center;
+    padding: 50px, 0px;
+}
+
+.header h1 {
+    font-size: 3.5em;
+    font-family: kendo;
+}
+
+.header p {
+    font-size: 1.5em;
+    font-family: kendo;
+    color: #add6ff;
+}
+
+.header h1::selection {
+    background-color: #242c01;
+}
+
+.header p::selection {
+    background-color: #2a4744;
+}
+
+h2 {
+    text-align: center;
+    color: #e3dd66;
+    padding: 30px 0;
+    font-size: 2em;
+}
+
+.h2 {
+    box-shadow: 2px 2px 10px #000000;
+    background-color: #061333;
+}
+
+
+.main h2::selection {
+    background-color: #242c01;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.box1 {
+    background-color: #090a0fd7;
+    color: #fffb0075;
+    padding: 20px;
+    width: 60%;
+    margin: 10px;
+    text-align: justify;
+}
+
+.box h3 {
+    font-size: 2em;
+    font-family: kendo;
+    margin-bottom: 30px;
+    color: #ffee00;
+    text-align: center;
+}
+
+.box p {
+    color: #fff;
+}
+.box {
+    background-color: #090a0fd7;
+    color: #fffb0075;
+    padding: 20px;
+    width: 60%;
+    margin: 10px;
+    text-align: justify;
+}
+
+.box p::selection {
+    background-color: #10101a;
+}
+
+.box h3::selection {
+    background-color: #242c01;
+}
+
+
+.box h3 {
+    font-size: 2em;
+    font-family: kendo;
+    margin-bottom: 30px;
+    color: #ffee00;
+    text-align: center;
+}
+
+.box p {
+    color: #fff;
+}
+
+.box li {
+    padding: 20px;
+    color: #add6ff;
+}
+
+.box li::selection {
+    background-color: #305f5d;
+}
+
+
+.rodape {
+    background-color: #000000;
+    color: #ff0000;
+    text-align: center;
+    padding: 20px, 0px;
+    margin-top: 20px;
+}
+
+.rodape::selection {
+    background-color: #330608;
+}
+
+.parallax1 {
+    background-image: url(./image/kendo3.png);
+}
+
+.parallax2 {
+    background-image: url(./image/kendo1.png);
+}
+
+.parallax3 {
+    background-image: url(./image/kendo2.jpg);
+}
+
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2.5em;
+    }
+
+    .header p {
+        font-size: 1em;
+    }
+
+    .box{
+        width: 100%;
+    }
+
+    .box h3 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .parallax {
+        background-position: center;
+    }
+
+}
+
+@media (max-width: 428px) {
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .header p {
+        font-size: 1em;
+    }
+
+    .box {
+        padding: 15px;
+    }
+
+    .box h3 {
+        font-size: 1.2em;
+    }
+
+    .box li {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .parallax {
+        height: 60vh;
+    }
+
+    .parallax1 {
+        background-position: 72% 5%;
+    }
+
+    .parallax2 {
+        background-position: 20% 5%;
+    }
+
+    .parallax3 {
+        background-position: 40% 5%;
+    }
+}
